@@ -40,24 +40,11 @@ a{
 .main_container{
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit , minmax(350px,450px));
 }
 
-@media (min-width:935px){
-    .main_container{
-    grid-template-columns: repeat(2,1fr);
-    }
-}
-@media (min-width:1380px){
-    .main_container{
-    grid-template-columns: repeat(3,1fr);
-    }
-}
-@media (min-width:1600px){
-    .main_container{
-    grid-template-columns: repeat(4,1fr);
-    }
-}
+
 .card_container{
     overflow: hidden;
     display: flex;
